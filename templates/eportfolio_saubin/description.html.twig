@@ -1,5 +1,77 @@
 {% extends "base.html.twig" %}
 
 {% block body %} 
-<h3>{{ Titre }}</h3>
+<style>
+    body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f2f2f2;
+}
+
+header{
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+}
+
+.contenu{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 2em;
+}
+
+article{
+  flex: 0 1 300px;
+  margin: 1em;
+  text-align: center;
+  background-color: #fff;
+  padding: 1em;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+</style>
+    <body>
+      <header>
+      <h3>{{ Titre }}</h3>
+      </header>
+      <section class="contenu">
+        <article>
+            <img src="{{asset("911ia.jpg")}}" alt="Porsche">
+            <h3>Saubin Titouan:</h3>
+            <p>Je suis un jeune étudiant venant de sa campagne, ce que j'aime, c'est simple:</p>
+            <ul>
+              <li>J'apprécie être entouré de ma famille et faire des activités ensemble.</li>
+              <li>Lorsque je ne suis pas avec ma famille je passe la plupart du temps avec mes amis à faire des choses de droite à gauche ou bien à jouer en ligne avec eux</li>
+            </ul>
+        </article>
+        <article>
+            <img src="{{asset("911ia.jpg")}}" alt="Porsche">
+            <h4>Mes passions sont divers et variés</h4>
+            <p>J'ai une passion pour tous les moyens de déplacement sans quoi nous ne serions pas capable d'être si évolué, mais plus partuclièrement les voitures de sports qui serait pour moi un but à atteindre d'en possédé une de mon choix. Je peux comprendre que c'est un objectif un peux banale et pas très intéressant mais je serais fier de pouvoir partagé ce véhicules et la passion avec mon père.</p>
+        </article>
+        <article>
+            <img src="{{asset("Nature.jpg")}}" alt="Nature">
+            <h4>J'adore passé du temps en extérieur</h4>
+            <p>
+              J'aime énormément passé du temps en extérieur et dans les millieu aquatique.<br>
+              Je passe la pluspart de mon temps en forêt avec mes amis en été, j'apprécie explorer et passé du bon temps en bonne companie.<br>
+              </p>
+        </article>
+        <article>
+          <img src="{{asset("ski.jpg")}}" alt="Nature">
+          <h4>Ma saison préféré étant l'hiver</h4>
+          <p>Je suis donc un grand fanne des sports d'hiver et particulièrement du ski.</p>
+        </article>
+      </section>
+    </body>
+
 {% endblock %}

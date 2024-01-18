@@ -1,3 +1,15 @@
+<style>
+	footer {
+		background-color: #333;
+		color: #fff;
+		text-align: center;
+		padding: 10px 0;
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+	}
+</style>
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -7,13 +19,13 @@
 				Bienvenue: E-portfolio
 			{% endblock %}
 		</title>
-		<link rel="stylesheet" href="https://bootswatch.com/5/lux/bootstrap.min.css"> {% block stylesheets %}{% endblock %}
 		{% block javascripts %}
 			<script src="folder_name/jquery-1.12.0.js"></script>
 			{% block importmap %}
 				{{ importmap('app') }}
 			{% endblock %}
 		{% endblock %}
+		<link rel="stylesheet" href="https://bootswatch.com/5/lux/bootstrap.min.css">
 	</head>
 	<body>
 		<nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
@@ -59,5 +71,8 @@
         <div class="container">
             {% block body %}{% endblock %}
         </div>
+		<footer>
+			<p>&copy; 2024 SAUBIN. Tous droits réservés.</p>
+		</footer>
 	</body>
 </html>
