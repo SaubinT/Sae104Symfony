@@ -1,5 +1,81 @@
 {% extends "base.html.twig" %}
 
 {% block body %} 
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 0;
+      }
+      
+      header {
+        text-align: center;
+        padding: 20px 0;
+        background-color: #f2f2f2;
+      }
+      
+      section {
+        padding: 20px;
+        margin-bottom: 20px;
+        background-color: #fff;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      }
+      
+      ul {
+        list-style: none;
+        padding: 0;
+      }
+      
+      footer {
+        text-align: center;
+        padding: 10px 0;
+        background-color: #f2f2f2;
+      }
+</style>
 <h3>{{ Poste }}</h3>
+    <body>
+        <header>
+          <h1><link>Nom Prénom</link></h1>
+          <p><link>Titre professionnel</link></p>
+        </header>
+        <section>
+          <h2><link>Expérience professionnelle</link></h2>
+          <ul>
+            <li>
+              <h3><link>Poste 1</link></h3>
+              <p><link>Date de début - Date de fin</link></p>
+              <p><link>Description des responsabilités et réalisations</link></p>
+            </li>
+            <li>
+              <h3><link>Poste 2</link></h3>
+              <p><link>Date de début - Date de fin</link></p>
+              <p><link>Description des responsabilités et réalisations</link></p>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2><link>Formation</link></h2>
+          <ul>
+            <li>
+              <h3><link>Diplôme 1</link></h3>
+              <p><link>Date d'obtention</link></p>
+              <p><link>Description de la formation</link></p>
+            </li>
+            <li>
+              <h3><link>Diplôme 2</link></h3>
+              <p><link>Date d'obtention</link></p>
+              <p><link>Description de la formation</link></p>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h2><link>Compétences</link></h2>
+          <ul>
+            <li><link>Nom de la compétence 1</link></li>
+            <li><link>Nom de la compétence 2</link></li>
+            <li><link>Nom de la compétence 3</link></li>
+          </ul>
+        </section>
+    </body>
 {% endblock %}
