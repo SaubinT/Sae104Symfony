@@ -1,5 +1,84 @@
 {% extends "base.html.twig" %}
 
 {% block body %} 
+<style>
+  .resume {
+    
+    margin: auto;
+}
+
+.header {
+    text-align: center;
+}
+
+.section {
+    border-top: 1px solid #ccc;
+    padding: 20px 0;
+}
+
+.section h2 {
+   /* Style as needed */
+}
+
+.section ul {
+   /* Style as needed */
+}
+
+img{
+  max-width: 90%;
+  border-radius: 5px;
+  width: 150px; 
+  height: 150px;
+  object-fit: cover;
+}
+
+</style>
+
 <h1>{{ Titre }}</h1>
+
+<body>
+  <div class="resume">
+  <div class="header">
+      <h1>Titre: Poste de travail cherché</h1>
+      <p>Nom prénom âge</p>
+      <p>Description de moi blablabla...</p>
+      <img src="{{asset("Moi.png")}}" alt="Photo moi">
+  </div>
+  <div class="section">
+      <h2>Section 1</h2>
+      <ul>
+          <li>Permis</li>
+          <li>Langues</li>
+          <!-- Add more items as needed -->
+      </ul>
+
+      <!-- Repeat for other sections -->
+  </div>
+</div>
+
+<button onclick="downloadFile()">Mon Cv: Saubin Titouan</button>
+
+<script>
+function downloadFile() {
+  // Remplacez "chemin/vers/le/fichier" par le chemin réel vers votre fichier
+  var fileUrl = "{{asset("Cv.pdf")}}";
+  
+  // Créez un élément <a> invisible
+  var link = document.createElement("a");
+  link.href = fileUrl;
+  link.download = "";
+  
+  // Ajoutez l'élément <a> à la page
+  document.body.appendChild(link);
+  
+  // Cliquez sur le lien pour déclencher le téléchargement
+  link.click();
+  
+  // Supprimez l'élément <a> de la page
+  document.body.removeChild(link);
+}
+</script>
+
+</body>
+
 {% endblock %}
