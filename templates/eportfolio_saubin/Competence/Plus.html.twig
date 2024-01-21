@@ -1,84 +1,54 @@
 {% extends "base.html.twig" %}
 
-{% block body %} 
-<style>
-  .resume {
-    
-    margin: auto;
-}
+{% block body %}
+	
+	<body>
+		<h2 class="titreForm">{{ Titre }}</h2>
+		<legend class="titreForm">Merci de me donner des informations sur vous</legend>
 
-.header {
-    text-align: center;
-}
+		<form method="get">
+			<label for="nom_entreprise">Nom de l'entreprise :</label>
+			<input type="text" id="nom_entreprise" name="nom_entreprise" required><br><br>
 
-.section {
-    border-top: 1px solid #ccc;
-    padding: 20px 0;
-}
+			<label for="adresse">Adresse :</label>
+			<input type="text" id="adresse" name="adresse" required><br><br>
 
-.section h2 {
-   /* Style as needed */
-}
+			<label for="ville">Ville :</label>
+			<input type="text" id="ville" name="ville" required><br><br>
 
-.section ul {
-   /* Style as needed */
-}
+			<label for="code_postal">Code postal :</label>
+			<input type="text" id="code_postal" name="code_postal" required><br><br>
 
-img{
-  max-width: 90%;
-  border-radius: 5px;
-  width: 150px; 
-  height: 150px;
-  object-fit: cover;
-}
+			<label for="telephone">Téléphone :</label>
+			<input type="tel" id="telephone" name="telephone" required><br><br>
 
-</style>
+			<label for="email">E-mail :</label>
+			<input type="email" id="email" name="email" required><br><br>
 
-<h1>{{ Titre }}</h1>
+			<input type="submit" class="btn btn-primary" onclick="downloadFile()" value="Valider pour obtenir mon CV">
+		</form>
 
-<body>
-  <div class="resume">
-  <div class="header">
-      <h1>Titre: Poste de travail cherché</h1>
-      <p>Nom prénom âge</p>
-      <p>Description de moi blablabla...</p>
-      <img src="{{asset("Moi.png")}}" alt="Photo moi">
-  </div>
-  <div class="section">
-      <h2>Section 1</h2>
-      <ul>
-          <li>Permis</li>
-          <li>Langues</li>
-          <!-- Add more items as needed -->
-      </ul>
+		<p>
+			_<br>
+			_<br>
+		</p>
 
-      <!-- Repeat for other sections -->
-  </div>
-</div>
+    <script>
+      function downloadFile() {
+        var fileUrl = "{{asset("Cv.pdf")}}";
+        // Créez un élément <a> invisible
+        var link = document.createElement("a");
+        link.href = fileUrl;
+        link.download = "";
+        // Ajoutez l'élément <a> à la page
+        document.body.appendChild(link);
+        // Cliquez sur le lien pour déclencher le téléchargement
+        link.click();
+        // Supprimez l'élément <a> de la page
+        document.body.removeChild(link);
+      }
+    </script>
 
-<button onclick="downloadFile()">Mon Cv: Saubin Titouan</button>
-
-<script>
-function downloadFile() {
-  // Remplacez "chemin/vers/le/fichier" par le chemin réel vers votre fichier
-  var fileUrl = "{{asset("Cv.pdf")}}";
-  
-  // Créez un élément <a> invisible
-  var link = document.createElement("a");
-  link.href = fileUrl;
-  link.download = "";
-  
-  // Ajoutez l'élément <a> à la page
-  document.body.appendChild(link);
-  
-  // Cliquez sur le lien pour déclencher le téléchargement
-  link.click();
-  
-  // Supprimez l'élément <a> de la page
-  document.body.removeChild(link);
-}
-</script>
-
-</body>
+	</body>
 
 {% endblock %}

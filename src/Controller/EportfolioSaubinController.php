@@ -60,7 +60,7 @@ class EportfolioSaubinController extends AbstractController
     public function Plus() 
     {
         return $this->render('eportfolio_saubin/Competence/Plus.html.twig',[
-            'Titre' => "Autres",
+            'Titre' => "Quelques infromations sur vous",
         ]);
     }
 }
