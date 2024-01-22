@@ -1,79 +1,90 @@
 {% extends "base.html.twig" %}
 
-{% block body %} 
-<style>
+{% block body %}
+	<style>
 
 
-header {
-  text-align: center;
-  padding: 20px 0;
-  background-color: #f2f2f2;
-}
+		header {
+			text-align: center;
+			padding: 20px 0;
+			background-color: #f2f2f2;
+		}
 
-section {
-  padding: 20px;
-  margin-bottom: 20px;
-  background-color: #fff;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-}
+		section {
+			padding: 20px;
+			margin-bottom: 20px;
+			background-color: #fff;
+			box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+		}
 
-ul {
-  list-style: none;
-  padding: 0;
-}     
+		ul {
+			list-style: none;
+			padding: 0;
+		}
 
-img{
-  max-width: 80%;
-  border-radius: 5px;
-  width: 100px; 
-  height: 100px;
-  object-fit: cover;
-}
-</style>
+		img {
+			max-width: 80%;
+			border-radius: 5px;
+			width: 100px;
+			height: 100px;
+			object-fit: cover;
+		}
+	</style>
 
-<body class="BodyCv">
-    <header>
-      <h3>{{ Poste }}</h3>
-      <h1><link>Nom Prénom</link></h1>
-      <p><link>Titre professionnel</link></p>
-    </header>
-    <section>
-      <h2><link>Expérience professionnelle</link></h2>
-      <ul>
-        <li>
-          <h3><link>Poste 1</link></h3>
-          <p><link>Date de début - Date de fin</link></p>
-          <p><link>Description des responsabilités et réalisations</link></p>
-        </li>
-        <li>
-          <h3><link>Poste 2</link></h3>
-          <p><link>Date de début - Date de fin</link></p>
-          <p><link>Description des responsabilités et réalisations</link></p>
-        </li>
-      </ul>
-    </section>
-    <section>
-      <h2><link>Formation</link></h2>
-      <ul>
-        <li>
-          <h3><link>Diplôme 1</link></h3>
-          <p><link>Date d'obtention</link></p>
-          <p><link>Description de la formation</link></p>
-        </li>
-        <li>
-          <h3><link>Diplôme 2</link></h3>
-          <p><link>Date d'obtention</link></p>
-          <p><link>Description de la formation</link></p>
-        </li>
-      </ul>
-    </section>
-    <section>
-      <h2><link>Compétences</link></h2>
-      <ul>
-        <li><link>Nom de la compétence 1</link></li>
-        <li><link>Nom de la compétence 2</link></li>
-        <li><link>Nom de la compétence 3</link></li>
-      </ul>
-    </section>
-</body>
+	<body class="BodyCv">
+		<header>
+			<h2>{{ Poste }}</h2>
+			<h2>SAUBIN Titouan</h2>
+      <img class="imgDescri" src="{{asset("Moi.png")}}" alt="Moi">
+		</header>
+
+		<section>
+			<h2>Expérience professionnelle</h2>
+			<ul>
+
+				<li>
+					<h4>Employé PGC chez Carrefour Market</h4>
+					<p>3 semaines en août 2023</p>
+					<p>
+						Gestion des stocks<br>
+						Mise en rayons<br>
+						Renseignement et aides au clients<br>
+					</p>
+				</li>
+
+				<li>
+					<h4>Employé d’entretien en mairie</h4>
+					<p>2 semaines en Juillet 2022</p>
+					<p>
+						Tonte et arrosage d’espace vert<br>
+						Rénovation de portail<br>
+						Souffleur et nettoyeur haute pression d’espace public<br>
+					</p>
+				</li>
+
+			</ul>
+		</section>
+
+		<section>
+			<h2>Formation</h2>
+		<ul>
+			<li>
+				<h4>1ère année BUT RT</h4>
+      </li>
+		  <p>
+        Université Jean Monnet à Roanne: 2023-2024
+      </p>
+
+      <li>
+        <h4>Bac général : Math / Physique </h4>
+      </li>
+      <p>
+        Lycée Camille Corot à Morestel: 2020-2023
+      </p>
+
+    </ul>
+    </section> 
+    <section><h2><link>Compétences</link></h2><ul><li><link>Nom de la compétence 1</li></link></li><li><link>Nom de la compétence 2</li></link></li><li><link>Nom de la compétence 3</li></link></li></ul></section> 
+	</body>
+
 {% endblock %}
