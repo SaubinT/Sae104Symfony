@@ -1,3 +1,7 @@
+.indexfond{
+    background-color: #0c738a88;
+}
+
 .CreativeCommons {
     background-color: #333;
     color: #fff;
@@ -11,8 +15,6 @@
 .BodyCv {
     font-family: Arial, sans-serif;
     line-height: 1.6;
-    margin: 0;
-    padding: 0;
 }
 
 .bodyDescri {
@@ -96,4 +98,18 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
     background-color: #45a049;
+}
+
+.texte-blanc{
+    color: #f2f2f2;
+}
+
+.texte-bleu{
+    color: #66b2c348;
+}
+
+.headerCV{
+    text-align: center;
+	padding: 20px 0;
+    background-color: #0c738a88;
 }

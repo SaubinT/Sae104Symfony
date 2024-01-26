@@ -2,44 +2,70 @@
 
 {% block body %}
 	<style>
-
-
-		header {
-			text-align: center;
-			padding: 20px 0;
-			background-color: #f2f2f2;
+		.imgMoi {	
+			width: 10%; 
+			height: 10%; 
+			object-fit: cover; 
+			border-radius: 10%; 
+			border: 2px solid #000; 
+			box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); 
 		}
-
-		section {
+		
+		.cvSection{
+			width: 50%;
+			border: 1px solid #ccc;
+			box-sizing: border-box;
+			float: left;
 			padding: 20px;
 			margin-bottom: 20px;
-			background-color: #fff;
+			margin-left: 25%;
+			margin-right: 25%;
+			margin-top: 20px;
+			background-color: grey;
 			box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+			font-weight: bold; 
 		}
 
-		ul {
-			list-style: none;
-			padding: 0;
-		}
-
-		img {
-			max-width: 80%;
-			border-radius: 5px;
-			width: 100px;
-			height: 100px;
-			object-fit: cover;
-		}
+		.cvh2 {
+			color: white;
+			margin-bottom: 10px;
+		}		
 	</style>
 
 	<body class="BodyCv">
-		<header>
+		<header class="headerCV">
 			<h2>{{ Poste }}</h2>
 			<h2>SAUBIN Titouan</h2>
-      <img class="imgDescri" src="{{asset("Moi.png")}}" alt="Moi">
+			<img class="imgMoi" src="{{asset("MoiCv2.jpg")}}" alt="Moi">
 		</header>
+		
+		<section class="cvSection">
+			<h2 class="cvh2">Compétences</h2>
+			<ol>
+				<li><h5>Informatique:</h5>
+				<ul>
+					<li>Langage de programmation C et python</li>
+					<li>Développement Web</li>
+					<li>Administration de réseaux locaux</li>
+					<li><h6>Utilisations d'outils informatique</h6>
+						<ul>
+							<li>Messagerie Outlook et Gmail</li>
+							<li>Pack Office</li>
+							<li>Paint et Canva</li>
+						</ul>
+					</li>
+				</ul></li>
+				
+				<li><h5>Divers</h5>
+				<ul>
+					<li>Entretien d’espaces extérieures </li>
+					<li>Distribution et démarchage en porte à porte</li>
+				</ul></li>
+			</ol>
+		</section>
 
-		<section>
-			<h2>Expérience professionnelle</h2>
+		<section class="cvSection">
+			<h2 class="cvh2">Expérience professionnelle</h2>
 			<ul>
 
 				<li>
@@ -65,26 +91,48 @@
 			</ul>
 		</section>
 
-		<section>
-			<h2>Formation</h2>
-		<ul>
+		<section class="cvSection">
+			<h2 class="cvh2">Formation</h2>
+			<ul>
+				<li>
+					<h4>1ère année BUT RT</h4>
+			</li>
+				<p>
+				Université Jean Monnet à Roanne: 2023-2024
+			</p>
+
 			<li>
-				<h4>1ère année BUT RT</h4>
-      </li>
-		  <p>
-        Université Jean Monnet à Roanne: 2023-2024
-      </p>
+				<h4>Bac général : Math / Physique </h4>
+			</li>
+			<p>
+				Lycée Camille Corot à Morestel: 2020-2023
+			</p>
 
-      <li>
-        <h4>Bac général : Math / Physique </h4>
-      </li>
-      <p>
-        Lycée Camille Corot à Morestel: 2020-2023
-      </p>
+			</ul>
+		</section>
 
-    </ul>
-    </section> 
-    <section><h2><link>Compétences</link></h2><ul><li><link>Nom de la compétence 1</li></link></li><li><link>Nom de la compétence 2</li></link></li><li><link>Nom de la compétence 3</li></link></li></ul></section> 
+    <section class="cvSection">
+		<h2 class="cvh2">Savoir être</h2>
+		<ul>
+			<li>Avenant et Courtois</li>
+			<li>Autonome et Organisé</li>
+			<li>A l’écoute et Patient</li>
+			<li>Sens de l’initiative</li>
+			<li>Travail en équipe</li>
+		</ul>
+	</section> 
+
+	<p class="texte-blanc">
+		_<br>
+		_<br>
+		_<br>
+		_<br>
+		_<br>
+		_<br>
+		_<br>
+		_<br>
+	</p>
+	
 	</body>
 
 {% endblock %}
