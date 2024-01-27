@@ -13,6 +13,7 @@ class EportfolioSaubinController extends AbstractController
     {
         return $this->render('eportfolio_saubin/index.html.twig', [
             'controller_name' => 'E-eportfolio',
+            'NumPage' => "1"
         ]);
     }
 
@@ -21,6 +22,7 @@ class EportfolioSaubinController extends AbstractController
     {
         return $this->render('eportfolio_saubin/description.html.twig',[
             'Titre' => "Ce que je suis et ce que j'apprécie",
+            'NumPage' => "2"
         ]);
     }
 
@@ -29,6 +31,7 @@ class EportfolioSaubinController extends AbstractController
     {
         return $this->render('eportfolio_saubin/cv.html.twig',[
             'Poste' => "Administrateur réseau",
+            'NumPage' => "3"
         ]);
     }
 
@@ -37,6 +40,7 @@ class EportfolioSaubinController extends AbstractController
     {
         return $this->render('eportfolio_saubin/Competence/Admini.html.twig',[
             'Titre' => "Administrer les Réseaux et l'Internet",
+            'NumPage' => "4"
         ]);
     }
 
@@ -45,6 +49,7 @@ class EportfolioSaubinController extends AbstractController
     {
         return $this->render('eportfolio_saubin/Competence/Connect.html.twig',[
             'Titre' => "Connecter les Entreprises et les Usagers",
+            'NumPage' => "5"
         ]);
     }
 
@@ -53,6 +58,7 @@ class EportfolioSaubinController extends AbstractController
     {
         return $this->render('eportfolio_saubin/Competence/Prog.html.twig',[
             'Titre' => "Créer des Outils et Applications informatiques pour les R&T",
+            'NumPage' => "6"
         ]);
     }
 
@@ -61,6 +67,7 @@ class EportfolioSaubinController extends AbstractController
     {
         return $this->render('eportfolio_saubin/Competence/Plus.html.twig',[
             'Titre' => "Quelques infromations sur vous",
+            'NumPage' => "7"
         ]);
     }
 }
