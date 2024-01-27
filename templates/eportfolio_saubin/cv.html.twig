@@ -1,37 +1,6 @@
 {% extends "base.html.twig" %}
 
 {% block body %}
-	<style>
-		.imgMoi {	
-			width: 10%; 
-			height: 10%; 
-			object-fit: cover; 
-			border-radius: 10%; 
-			border: 2px solid #000; 
-			box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); 
-		}
-		
-		.cvSection{
-			width: 50%;
-			border: 1px solid #ccc;
-			box-sizing: border-box;
-			float: left;
-			padding: 20px;
-			margin-bottom: 20px;
-			margin-left: 25%;
-			margin-right: 25%;
-			margin-top: 20px;
-			background-color: grey;
-			box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-			font-weight: bold; 
-		}
-
-		.cvh2 {
-			color: white;
-			margin-bottom: 10px;
-		}		
-	</style>
-
 	<body class="BodyCv">
 		<header class="headerCV">
 			<h2>{{ Poste }}</h2>
@@ -39,7 +8,7 @@
 			<img class="imgMoi" src="{{asset("MoiCv2.jpg")}}" alt="Moi">
 		</header>
 		
-		<section class="cvSection">
+		<section class="cvSection1">
 			<h2 class="cvh2">Compétences</h2>
 			<ol>
 				<li><h5>Informatique:</h5>
@@ -64,7 +33,7 @@
 			</ol>
 		</section>
 
-		<section class="cvSection">
+		<section class="cvSection2">
 			<h2 class="cvh2">Expérience professionnelle</h2>
 			<ul>
 
@@ -91,7 +60,7 @@
 			</ul>
 		</section>
 
-		<section class="cvSection">
+		<section class="cvSection1">
 			<h2 class="cvh2">Formation</h2>
 			<ul>
 				<li>
@@ -111,7 +80,7 @@
 			</ul>
 		</section>
 
-    <section class="cvSection">
+    <section class="cvSection2">
 		<h2 class="cvh2">Savoir être</h2>
 		<ul>
 			<li>Avenant et Courtois</li>
@@ -122,17 +91,20 @@
 		</ul>
 	</section> 
 
+	<section class="cvSection1Bis">
+		<h5>Permettez moi de me renseigner sur vous:</h5>
+		<button type="button"> <a href="/Plus">Cliquez ici pour en savoir plus</a></button>
+		<p>Et pour ainsi récupérer mon cv</p>
+	</section>
+
+	<section class="cvSection">
 	<p class="texte-blanc">
 		_<br>
 		_<br>
 		_<br>
 		_<br>
-		_<br>
-		_<br>
-		_<br>
-		_<br>
 	</p>
-	
+	</section>
 	</body>
 
 {% endblock %}
