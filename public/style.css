@@ -97,7 +97,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #45a049;
+    background-color: #235f26;
 }
 
 .texte-blanc{
@@ -181,4 +181,19 @@ input[type="submit"]:hover {
 .cvh2 {
     color: white;
     margin-bottom: 10px;
+}
+
+.headCompé1{
+    text-align: center;
+    background-color: orange;
+}
+
+.headCompé2{
+    text-align: center;
+    background-color: cyan;
+}
+
+.headCompé3{
+    text-align: center;
+    background-color: greenyellow;
 }

@@ -1,0 +1,83 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<body class="indexfond">
+    <section>
+        <h1>{{ controller_name }}</h1>
+        <p>
+            <br>
+            <br>
+            <br>
+            
+        </p>
+    </section>
+    <div class="card text-white bg-dark mb-3" style="max-width: 20rem;">
+        <div class="card-header">Informations personnelles</div>
+        <div class="card-body">
+            <h4 class="card-title">Pour me contacter :</h4>
+            <ul class="card-text">
+                <li>Mail: saubin.titouan@gmail.com</li>
+                <li>Téléphone: 07 68 83 01 72</li>
+                <li>Adresse appartement: 16 rue François Poutignat, 42300, Roanne</li>
+                <li>Adresse domicile: 172 rue des écoles, 38390, Porcieu-Amblagnieu</li>
+            </ul>
+        </div>
+    </div>
+    <p>  
+    Pour plus d'informations professionel je vous laisse accès à mon cv mais aussi à un résumé plus divers de ce que j'aime et ce que je suis dans la rubrique en savoir plus.<br>
+    Vous pouvez aussi me contacter avec les informations ci-dessus et je reste à votre disposition pour d'autres demandes.
+    </p>
+
+
+
+    <section class="contenu">
+      <article class="article">
+          <img class="imgDescri" src="{{asset("CarteStyle.png")}}" alt="Porsche">
+          <h3>Saubin Titouan:</h3>
+          <p>I'm a young student from the countryside, and what I like is simple:</p>
+          <ul>
+            <li>I enjoy being surrounded by my family and doing activities together.</li>
+            <li>When I'm not with my family, I spend most of my time with my friends, doing things left and right or playing online games with them.</li>
+          </ul>
+      </article>
+      <article class="article">
+          <img class="imgDescri" src="{{asset("911ia.jpg")}}" alt="Porsche">
+          <h4>My passions are many and varied</h4>
+          <p>I have a common passion for sports cars, and it would be a dream come true for me to have the means to buy one of my choice through my own hard work. It may seem futile, but it's a passion like any other, and I'd be proud to be able to share it with my father.</p>
+      </article>
+      <article class="article">
+          <img class="imgDescri" src="{{asset("Nature.jpg")}}" alt="Nature">
+          <h4>I love spending time outdoors</h4>
+          <p>
+            I love spending time outdoors and in water.<br>
+            I spend most of my time in the forest with my friends in the summer, enjoying exploring and spending time in good company.<br>
+          </p>
+      </article>
+      <article class="article">
+        <img class="imgDescri" src="{{asset("ski.jpg")}}" alt="Nature">
+        <h4>My favorite season is winter</h4>
+        <p>
+          So I'm a big fan of winter sports, especially skiing, which is a way for me to escape and have a good time during the season.<br>
+          I really enjoy the winter atmosphere, but I don't hate summer because you can get out and enjoy the sun, but winter and wintertime will always make me happy.
+          </p>
+      </article>
+      <article class="article">
+        <img class="imgDescri" src="{{asset("animaux.jpg")}}" alt="Nature">
+        <h4>Animals in my life</h4>
+        <p>
+          I grew up with animals and have always enjoyed their company.<br>
+          I've always been interested in animals, so working in the animal industry has always been a secondary future plan for me.<br>
+          Despite this side project, I'm still convinced of my future in the field of networks and telecommunications, which I'm passionate about.
+        </p>
+      </article>
+    </section>
+
+
+    <p class="texte-bleu">
+		_<br>
+		_<br>
+		_<br>
+		_<br>
+	</p>
+</body>        
+{% endblock %}

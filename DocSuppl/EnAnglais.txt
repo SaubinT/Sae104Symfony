@@ -1,3 +1,17 @@
+#[Route('/En', name: 'app_En')]
+public function En() 
+{
+    return $this->render('eportfolio_saubin/initiative.html.twig',[
+        'controller_name' => 'E-eportfolio',
+        'NumPage' => "8"
+    ]);
+}
+
+
+<li class="nav-item">
+	<a class="nav-link" href="/En">Me</a>
+</li>
+
 Welcome to my online portfolio. I'm an 18-year-old student in my first year of a Bachelor of Technology in Networks and Telecommunications in Roanne, France.
 
 I'm keen to develop my existing skills and acquire new ones.
@@ -21,5 +35,3 @@ Home address: 172 rue des écoles, 38390, Porcieu-Amblagnieu
 For more professional information, I give you access to my cv and also to a more diverse summary of what I like and what I am in the "Learn more" section.
 
 You can also contact me using the information above, and I'll be happy to answer any further questions you may have.
-
-Learn More
