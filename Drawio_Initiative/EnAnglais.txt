@@ -14,14 +14,3 @@ public function En()
 
 
 
-Personal information   
-
-TO CONTACT ME:
-
-Mail: saubin.titouan@gmail.com
-
-Phone: 07 68 83 01 72
-
-Apartment address: 16 rue François Poutignat, 42300, Roanne
-
-Home address: 172 rue des écoles, 38390, Porcieu-Amblagnieu
